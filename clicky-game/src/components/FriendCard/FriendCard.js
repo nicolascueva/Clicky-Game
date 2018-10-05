@@ -4,15 +4,17 @@ import "./FriendCard.css";
 const FriendCard = props => (
   <div className="card">
     <div className="img-container">
+
+
       <img alt={props.name} src={props.image} />
     </div>
     <div className="content">
 
     </div>
-    {/*<span onClick={() => props.removeFriend(props.id)} className="remove">
-      𝘅
+    {/*<span onClick={() => props.handleIncrement(props.id)} className="img">
+      
 </span>*/}
-  </div>
+  </div >
 );
 
 export default FriendCard;

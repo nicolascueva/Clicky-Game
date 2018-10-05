@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
+import Header from "./components/Header";
 import Title from "./components/Title";
 import Directions from "./components/Directions";
 import friends from "./friends.json";
@@ -23,6 +24,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
+        <Header></Header>
         <Title>Clicky Game</Title>
         <Directions>Click on an image to earn points, but don't click on any more than once!</Directions>
         {this.state.friends.map(friend => (
