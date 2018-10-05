@@ -33,7 +33,7 @@ class App extends Component {
             id={friend.id}
             key={friend.id}
             image={friend.image}
-
+            handleIncrement={this.handleIncrement}
           />
         ))}
       </Wrapper>
